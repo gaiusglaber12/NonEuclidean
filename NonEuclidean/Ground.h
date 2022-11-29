@@ -11,8 +11,19 @@ public:
       mesh = AquireMesh("ground.obj");
     }
     shader = AquireShader("texture");
-    texture = AquireTexture("checker_green.bmp");
+    texture = AquireTexture("white.bmp");
     scale = Vector3(10, 1, 10);
+  }
+  Ground(const char* texturepath,bool slope = false) {
+      if (slope) {
+          mesh = AquireMesh("ground_slope.obj");
+      }
+      else {
+          mesh = AquireMesh("ground.obj");
+      }
+      shader = AquireShader("texture");
+      texture = AquireTexture("white.bmp");
+      scale = Vector3(10, 1, 10);
   }
   virtual ~Ground() {}
 };

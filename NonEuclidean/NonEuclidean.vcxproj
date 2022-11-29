@@ -175,6 +175,7 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Collider.h" />
+    <ClInclude Include="Cube.h" />
     <ClInclude Include="Floorplan.h" />
     <ClInclude Include="Ground.h" />
     <ClInclude Include="House.h" />
